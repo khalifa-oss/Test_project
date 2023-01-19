@@ -9,15 +9,15 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 
-@Data@AllArgsConstructor@NoArgsConstructor
-@Entity
+//@Data@AllArgsConstructor@NoArgsConstructor
+//@Entity
 public class Traineeship implements Serializable {
-    @Id
+   /* @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     private Date beginDate;
     private Date EndDate;
     private  String directionName;
     @OneToMany()
-    private Collection<Trainee> trainee ;
+    private Collection<Trainee> trainee ;*/
 }

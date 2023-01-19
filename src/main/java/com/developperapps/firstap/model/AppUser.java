@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ValueGenerationType;
 
+import javax.management.relation.Role;
 import java.io.Serializable;
 import java.util.Collection;
 
@@ -18,6 +19,7 @@ public class AppUser implements Serializable {
     private String username;
     private String password;
     private String email;
-    @OneToMany
-    private Collection<AppRole>roles;
+    @Enumerated(EnumType.STRING)
+    private Collection<AppRole> appRole;
+
 }

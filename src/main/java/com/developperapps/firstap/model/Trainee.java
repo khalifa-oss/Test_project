@@ -21,7 +21,8 @@ public class Trainee implements Serializable {
     private String password;
     private String email;
     private Date birthDate;
-    private Collection<AppRole> roles;
+    @Enumerated(EnumType.STRING)
+    private Collection<AppRole> appRole;
     @ManyToOne()
     @JoinColumn(name = "supervisor_id")
     private Supervisor supervisor;

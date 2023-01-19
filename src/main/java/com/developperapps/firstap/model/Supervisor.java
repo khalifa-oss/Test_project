@@ -15,6 +15,8 @@ public class Supervisor implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     private  String name;
+    @Enumerated(EnumType.STRING)
+    private AppRole appRole;
 
     @OneToMany(fetch = FetchType.LAZY)
     private Collection<Trainee> trainees;
